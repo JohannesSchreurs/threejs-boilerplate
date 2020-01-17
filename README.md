@@ -1,5 +1,5 @@
 # A boilerplate for Three.js
-Basic boilerplate for Three.js projects. It comes with some basic settings and included packages (SASS, Stats.js). Packages are bundled by [parcel](https://parceljs.org/). 
+Basic boilerplate for Three.js projects. It comes with some basic settings and included packages (SASS, Stats.js, dat.gui, TrackballControls). Packages are bundled by [parcel](https://parceljs.org/). 
 
 # Setup
 Use following commands: 
