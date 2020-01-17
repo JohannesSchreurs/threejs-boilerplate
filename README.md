@@ -1,6 +1,13 @@
 # A boilerplate for Three.js
 Basic boilerplate for Three.js projects. It comes with some basic settings and included packages (SASS, Stats.js). Packages are bundled by [parcel](https://parceljs.org/). 
 
-Clone it, run `npm install` and run `npm run dev` to get a server started on `localhost:1234`.
+# Setup
+Use following commands: 
+
+```
+git clone https://github.com/JohannesSchreurs/threejs-boilerplate
+npm i
+npm run dev
+```
 
 If for some reasons you decide to build with using the boilerplate, you can use `npm run build`. 
