@@ -32,13 +32,13 @@ scene.add(cube);
 camera.position.z = 5;
 
 const animate = () => {
-  stats.begin();
+  stats.update();
 
   cube.rotation.x += 0.01;
   cube.rotation.y += 0.01;
 
   renderer.render(scene, camera);
-  stats.end();
+
   requestAnimationFrame(animate);
 };
 
