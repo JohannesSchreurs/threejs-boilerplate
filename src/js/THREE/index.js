@@ -1,3 +1,4 @@
+//The most basic setup for a Three scene.
 import * as THREE from "three";
 
 var scene = new THREE.Scene();
