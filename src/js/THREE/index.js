@@ -28,6 +28,7 @@ const renderer = new WebGLRenderer({
 
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setClearColor(0x000000);
+renderer.setPixelRatio(window.devicePixelRatio);
 
 const geometry = new BoxGeometry(100, 100, 100);
 const material = new MeshBasicMaterial({ color: 0xffffff, wireframe: true });
@@ -51,6 +52,8 @@ const animate = () => {
   requestAnimationFrame(animate);
 };
 
+//This is only suited for fullscreen displays. If you want a smaller canvas to render on, you might need to change this function.
+//This article could help you: https://threejsfundamentals.org/threejs/lessons/threejs-responsive.html
 window.addEventListener(
   "resize",
   () => {
