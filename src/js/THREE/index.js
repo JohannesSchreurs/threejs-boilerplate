@@ -17,13 +17,14 @@ const camera = new PerspectiveCamera(
 );
 
 const renderer = new WebGLRenderer({
-  canvas: document.getElementById("threeRenderCanvas")
+  canvas: document.getElementById("threeRenderCanvas"),
+  antialias: true
 });
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 const geometry = new BoxGeometry(1, 1, 1);
-const material = new MeshBasicMaterial({ color: 0x00ff00 });
+const material = new MeshBasicMaterial({ color: 0xffffff, wireframe: true });
 const cube = new Mesh(geometry, material);
 scene.add(cube);
 
