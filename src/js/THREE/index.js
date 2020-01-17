@@ -7,6 +7,7 @@ import {
   MeshBasicMaterial,
   Mesh
 } from "three";
+import stats from "../stats/index";
 
 const scene = new Scene();
 const camera = new PerspectiveCamera(
@@ -31,12 +32,14 @@ scene.add(cube);
 camera.position.z = 5;
 
 const animate = () => {
-  requestAnimationFrame(animate);
+  stats.begin();
 
   cube.rotation.x += 0.01;
   cube.rotation.y += 0.01;
 
   renderer.render(scene, camera);
+  stats.end();
+  requestAnimationFrame(animate);
 };
 
 animate();
