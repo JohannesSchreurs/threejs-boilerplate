@@ -11,4 +11,4 @@ npm run dev
 ```
 This will output a fullscreen canvas with a spinning cube (on localhost:1234).
 
-If for some reasons you decide to build with using the boilerplate, you can use `npm run build`. 
+If for some reasons you decide to build with this boilerplate, you can use `npm run build`. 
